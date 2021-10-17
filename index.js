@@ -5,8 +5,8 @@ var messages = [
     'not quite right...'
 ]
 // Create variables to count wins and losses
-var wins = 0
-var losses = 0
+var wins = 1
+var losses = 1
 
 // Create variables that target elements with the following IDs: 'message', 'wins', 'losses'
 var messageElement = document.getElementById('message')
@@ -41,10 +41,10 @@ for (var i = 0; i < boxElements.length; i++) {
 
     if (boxNumWasClicked = randomNum) {
         messageElement.textContent = "That's Correct!"
-        winsElement++
+        winsElement.textContent = "Wins: " + wins++
     } else {
         messageElement.textContent = messages
-        lossesElement++
+        lossesElement.textContent = "Losses: " + losses++
     }
     }
 }
