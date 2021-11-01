@@ -1,19 +1,36 @@
 * {
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 body {
-  font-family: 'Bebas Neue', Impact, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 20px;
+  background-image: linear-gradient(to bottom right, #010126, #41b0fc);
+}
+
+img {
+  width: 15%;
 }
 
 header {
-  background-color: #6003C3;
 }
 
 h1 {
+  font-size: 3em;
+}
+
+h1, h2, p, a, label {
   color: white;
-  font-size: 4em;
+}
+
+a {
+  text-decoration: none;
 }
 
 
